@@ -1,0 +1,201 @@
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.8);
+    overflow-x:hidden;
+    position:fixed;
+    top:0px;
+    bottom: 0px;
+    z-index: 99999999;
+}
+.b-popup .b-popup-content {
+    margin:40px auto 30px auto;
+    width:1000px;
+    height: auto;
+    background: #ffffff;
+    background-size: 100%; 
+    position: relative; 
+    padding: 55px 60px 60px 60px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.b-popup .close {
+      font-family: CenturyGothic, sans-serif;
+      font-size: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+      top: -30px;
+      right: 0px;
+      position: absolute;
+      text-decoration: none;
+}
+.b-popup h2 {
+  font-family: CenturyGothic Bold, sans-serif;
+      font-size: 24px;
+      color: rgba(28, 28, 28, 0.9);
+      text-transform: uppercase;
+      text-align: center;
+}
+.pop-line {
+  width: 77px;
+  height: 2px;
+  background: #ffe17a;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.form-box {
+  margin-top: 50px;
+  display: inline-block;
+  width: 100%;
+}
+.left-form {
+  float: left;
+  width: 45%;
+}
+.right-form {
+  float: right;
+  width: 45%;
+}
+label {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #142369;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+.form-box span {
+  color: #e43030;
+}
+.form-box p {
+  margin-bottom: 15px;
+}
+input[type="text"] {
+  width: 100%;
+  background: #eeeeee;
+  height: 44px;
+  border: 0px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  
+}
+.radio span {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #1c1c1c;
+  text-transform: lowercase;
+  margin-top: -15px;
+}
+input.sec-input {
+  margin-left: 35px;
+}
+input[type="date"] {
+  width: 60%;
+  background: #eeeeee;
+  height: 44px;
+  border: 0px;
+  padding: 0px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #1c1c1c;
+}
+.textarea textarea {
+  border: 0px;
+  background: #eeeeee;
+  width: 100%;
+  min-height: 100px;
+}
+.mini-text {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #bababa !important;
+}
+#upload {
+  margin-top: 18px;
+  padding-right: 60px;
+}
+.health {
+  border-top: 1px solid #eeeeee;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.check-zone {
+  margin-top: 15px;
+  display: inline-block;
+  width: 100%;
+}
+.check-head {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #142369;
+  display: inline-block;
+  padding-bottom: 8px;
+  font-weight: 300px;
+}
+.check-items li {
+  list-style-type: none;
+  float: left;
+  width: 33%;
+  height: 330px;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  border-top: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+}
+.check-text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #565656;
+  padding-bottom: 30px;
+}
+.check-items p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #565656;
+  line-height: 20px;
+}
+.head-pop {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #142369 !important;
+  display: inline-block;
+  padding-bottom: 15px;
+  font-weight: 300px;
+  text-transform: uppercase;
+}
+.check-items li:nth-child(3) {
+  border-right: 1px solid #e9e9e9;
+}
+.check-items li:nth-child(4) {
+  border-bottom: 1px solid #e9e9e9;
+}
+.check-items li:nth-child(5) {
+  border-bottom: 1px solid #e9e9e9;
+}
+.check-items li:nth-child(6) {
+  border-right: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+}
+.foot-pop {
+  text-align: center;
+}
+.pop-send {
+  font-family: CenturyGothic Bold, sans-serif;
+    font-size: 16px;
+    line-height: 55px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #dc5e42;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 55px;
+    border-bottom: 3px solid #c4543b;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.kitcen {
+  margin-top: 20px;
+}
