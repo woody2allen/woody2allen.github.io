@@ -16,7 +16,7 @@
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
-.slick-prev {
+.slick-next {
     font-size: 0;
     line-height: 0;
 
@@ -41,7 +41,7 @@
     background: url(../images/arrow-left.png) no-repeat 50% 50%;
     background-size: cover;
 }
-.slick-next
+.slick-prev
 {
     font-size: 0;
     line-height: 0;
@@ -67,16 +67,18 @@
     background: url(../images/arrow-right.png) no-repeat 50% 50%;
     background-size: cover;
 }
-.slick-prev:hover,
-.slick-prev:focus {
+.slick-next:hover,
+.slick-next:focus {
     color: transparent;
     outline: none;
+    background: url(../images/arrow-slider-left.png) no-repeat 0% 0%;
 }
-.slick-next:hover,
-.slick-next:focus
+.slick-prev:hover,
+.slick-prev:focus
 {
     color: transparent;
     outline: none;
+    background: url(../images/arrow-slider-right.png) no-repeat 0% 0%;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -96,7 +98,7 @@
 {
 }
 
-.slick-prev
+.slick-next
 {
     left: 0px;
 }
@@ -105,7 +107,7 @@
     right: -25px;
     left: auto;
 }
-.slick-prev:before
+.slick-next:before
 {
     content: '←';
 }
@@ -114,7 +116,7 @@
     content: '→';
 }
 
-.slick-next
+.slick-prev
 {
     right: 0px;
 }
@@ -123,7 +125,7 @@
     right: auto;
     left: -25px;
 }
-.slick-next:before
+.slick-prev:before
 {
     content: '→';
 }

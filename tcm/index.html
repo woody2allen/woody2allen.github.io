@@ -27,7 +27,7 @@
         <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-3"><a href="" class="logo"><img src="images/logo.png" alt=""></a></div>
           <div class="col-lg-5 col-md-10 col-sm-9">
-            <ul class="nav nav-pills main-menu right">
+            <ul class="nav nav-pills main-menu right menu-right">
                   <li role="presentation" class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">О компании<span class="caret"></span>
                     </a>
@@ -39,14 +39,29 @@
                       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">TCS 360° – АБСОЛЮТНАЯ СИСТЕМА КОНТРОЛЯ 360°</a></li>
                     </ul>
                   </li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Новости</a></li>
                   <li role="presentation" class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Каталог<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Принцип действия</a></li>
+                      <div class="dropdown-head">Светотехника</div>
+                      <li role="presentation" class="dropdown my-add">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Освещение офисных помещений<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu my-variant">
+                          <div class="dropdown-head">Тепловое оборудование</div>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Электрические Тепловые завесы</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Инфракрасные потолочные обогреватели</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Электрические ТЕПЛОВЫЕ пушки</a></li>
+                        </ul>
+                      </li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Освещение складских помещений</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Уличное и магистральное освещение</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Освещение торговых центров и витрин</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Светодиодные светофоры</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Калькулятор освещенности</a></li>
                     </ul>
                   </li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Новости</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Акции</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Контакты</a></li>
             </ul>
@@ -61,17 +76,13 @@
               <a href="">info@atmk.ru</a>
             </div>
             <form action=""><input type="search"></form>
+            <a href="" class="price">Получить прайс</a>
           </div>
         </div>
       </div>
     </header>
     <section class="parallax">
-      <!-- Responsive slider - START -->
-      <div class="responsive-slider-parallax" data-spy="responsive-slider" data-parallax="true" data-parallax-direction="1">
-        <div class="slides-container" data-group="slides">
-          <ul>
-            <li>
-              <div class="slide-body" data-group="slide">
+      <div class="slide-body" data-group="slide">
                 <div class="container">
                   <div class="wrapper">
                     <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
@@ -79,58 +90,48 @@
                       <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">технологии</div>
                     </div>
                     <div class="caption img-html5" data-animate="slideAppearLeftToRight" data-delay="200">
-                      <img src="images/par-box-1.png">
-                    </div>
-                    <div class="caption img-css3" data-animate="slideAppearLeftToRight">
-                      <img src="images/par-box-2.png">
+                      <img src="images/par-box-3.png">
                     </div>
                   </div>
                 </div>
               </div>
-            </li>
-            <li>
-              <div class="slide-body" data-group="slide">
-                <div class="container">
-                  <div class="wrapper">
-                    <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
-                      <h2>Twitter Boostrap</h2>
-                      <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">Compatible!</div>
-                    </div>
-                    <div class="caption img-bootstrap" data-animate="slideAppearDownToUp" data-delay="200">
-                      <img src="img/bootstrap.png">
-                    </div>
-                    <div class="caption img-twitter" data-animate="slideAppearUpToDown">
-                      <img src="img/twitter.png">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="slide-body" data-group="slide">
-                <div class="container">
-                  <div class="wrapper">
-                    <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
-                      <h2>Custom animations</h2>
-                      <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">For any caption you use!</div>
-                    </div>
-                    <div class="caption img-jquery" data-animate="slideAppearDownToUp" data-delay="200">
-                      <img src="img/jquery.png">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/par-main-1.jpg" alt="">
         </div>
-        <a class="slider-control left" href="#" data-jump="prev"><i class="icon-angle-left"></i></a>
-        <a class="slider-control right" href="#" data-jump="next"><i class="icon-angle-right"></i></a>
-        <div class="pages">
-          <a class="page" href="#" data-jump-to="1">1</a>
-          <a class="page" href="#" data-jump-to="2">2</a>
-          <a class="page" href="#" data-jump-to="3">3</a>
+        <div class="item">
+          <img src="images/par-main-2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/par-main-3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/par-main-4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/par-main-6.jpg" alt="">
         </div>
       </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
 <!-- Responsive slider - END -->
     </section>
     <section class="carousel my">
@@ -145,56 +146,59 @@
         </div>
       </div>
     </section>
-    <section class="line"></section>
+    <section class="highlights">
+      <ul class="webTicker">
+        <li class="pulse"><div class="box-pulse"></div></li>
+        <li class="pulse second-pulse-item"><div class="box-pulse-green"></div></li>
+      </ul>
+  	</section>
     <section class="product-carousel">
       <h3>Свежие публикации</h3>
         <div class="multiple-items">
           <div class="carousel-box"><div class="date">15.03.2016</div><div class="product-box box-1"><h4>25 МАРТА 2016 ГОДА, ДИЛЕРЫ ГК АЛЬЯНС ПРОШЛИ ОБУЧЕНИЕ В ТЕХНИЧЕСКОМ ОБРАЗОВАТЕЛЬНОМ ЦЕНТРЕ SAMSUNG.</h4><div class="product-text">25 марта 2016 года, дилеры ГК Альянс прошли обучение в Техническом образовательном центре Samsung (http://tec-samsung.ru/) по программе«VRF-системы DVM. Монтаж и запуск».</div><a href="">Подробнее >></a></div></div>
           <div class="carousel-box"><div class="date">15.03.2016</div><div class="product-box box-2"><h4>НОВАЯ ИННОВАЦИОННАЯ ПРИТОЧНАЯ УСТАНОВКА IFRESH</h4><div class="product-text">Инновационная приточная установка iFresh позволяет проветрить помещение и окружить себя чистым и свежим воздухом комфортной температуры, не открывая окна.</div><a href="">Подробнее >></a></div></div>
-          <div class="carousel-box"><div class="date">15.03.2016</div><div class="product-box box-3"><h4>НОВАЯ СЕРИЯ LITE 
+          <div class="carousel-box"><div class="date">15.03.2016</div><div class="product-box box-3"><h4>НОВАЯ СЕРИЯ LITE
 ОТ КОМПАНИИ RIX</h4><div class="product-text">Новинка значительно отличается от своих предшественников большим разнообразием функций и широким модельным рядом.</div><a href="">Подробнее >></a></div></div>
           <div class="carousel-box"><div class="date">15.03.2016</div><div class="product-box box-1"><h4>25 МАРТА 2016 ГОДА, ДИЛЕРЫ ГК АЛЬЯНС ПРОШЛИ ОБУЧЕНИЕ В ТЕХНИЧЕСКОМ ОБРАЗОВАТЕЛЬНОМ ЦЕНТРЕ SAMSUNG.</h4><div class="product-text">25 марта 2016 года, дилеры ГК Альянс прошли обучение в Техническом образовательном центре Samsung (http://tec-samsung.ru/) по программе«VRF-системы DVM. Монтаж и запуск».</div><a href="">Подробнее >></a></div></div>
           <div class="carousel-box"><div class="date">15.03.2016</div><div class="product-box box-2"><h4>НОВАЯ ИННОВАЦИОННАЯ ПРИТОЧНАЯ УСТАНОВКА IFRESH</h4><div class="product-text">Инновационная приточная установка iFresh позволяет проветрить помещение и окружить себя чистым и свежим воздухом комфортной температуры, не открывая окна.</div><a href="">Подробнее >></a></div></div>
-          <div class="carousel-box"><div class="date">15.03.2016</div><div class="product-box box-3"><h4>НОВАЯ СЕРИЯ LITE 
+          <div class="carousel-box"><div class="date">15.03.2016</div><div class="product-box box-3"><h4>НОВАЯ СЕРИЯ LITE
 ОТ КОМПАНИИ RIX</h4><div class="product-text">Новинка значительно отличается от своих предшественников большим разнообразием функций и широким модельным рядом.</div><a href="">Подробнее >></a></div></div>
         </div>
     </section>
-    <section class="line"></section>
+    <section class="highlights">
+      <ul class="webTicker">
+        <li class="pulse"><div class="box-pulse"></div></li>
+        <li class="pulse second-pulse-item"><div class="box-pulse-green"></div></li>
+      </ul>
+  	</section>
     <section class="slider">
       <h3>Области применения светильников</h3>
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="images/slider-1.jpg" alt="">
-          <div class="carousel-capt">
+      <div class="slider-items">
+          <div class="carousel-box"><img src="images/foot-slide-1.jpg" alt="Responsive image"><div class="carousel-capt">
             <h4>Освещение торговых центров и витрин:</h4>
             <div class="slider-text">Освещение торговых залов с потолками типа грильято или армстронг, подсветка торговых витрин. Не требуют обслуживания.</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/slider-2.jpg" alt="">
-          <div class="carousel-capt">
+          </div></div>
+          <div class="carousel-box"><img src="images/foot-slide-2.jpg" alt="Responsive image"><div class="carousel-capt">
             <h4>Освещение торговых центров и витрин:</h4>
             <div class="slider-text">Освещение торговых залов с потолками типа грильято или армстронг, подсветка торговых витрин. Не требуют обслуживания.</div>
-          </div>
+          </div></div>
+          <div class="carousel-box"><img src="images/foot-slide-3.jpg" alt="Responsive image"><div class="carousel-capt">
+            <h4>Освещение торговых центров и витрин:</h4>
+            <div class="slider-text">Освещение торговых залов с потолками типа грильято или армстронг, подсветка торговых витрин. Не требуют обслуживания.</div>
+          </div></div>
+          <div class="carousel-box"><img src="images/foot-slide-4.jpg" alt="Responsive image"><div class="carousel-capt">
+            <h4>Освещение торговых центров и витрин:</h4>
+            <div class="slider-text">Освещение торговых залов с потолками типа грильято или армстронг, подсветка торговых витрин. Не требуют обслуживания.</div>
+          </div></div>
+          <div class="carousel-box"><img src="images/foot-slide-5.jpg" alt="Responsive image"><div class="carousel-capt">
+            <h4>Освещение торговых центров и витрин:</h4>
+            <div class="slider-text">Освещение торговых залов с потолками типа грильято или армстронг, подсветка торговых витрин. Не требуют обслуживания.</div>
+          </div></div>
+          <div class="carousel-box"><img src="images/foot-slide-6.jpg" alt="Responsive image"><div class="carousel-capt">
+            <h4>Освещение торговых центров и витрин:</h4>
+            <div class="slider-text">Освещение торговых залов с потолками типа грильято или армстронг, подсветка торговых витрин. Не требуют обслуживания.</div>
+          </div></div>
         </div>
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      </a>
-    </div>
     </section>
     <section class="footer">
       <div class="container-fluid">
@@ -209,18 +213,10 @@
                       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Принцип действия</a></li>
                     </ul>
                   </li>
-                  <li role="presentation" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Каталог<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Принцип действия</a></li>
-                    </ul>
-                  </li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Каталог</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Новости</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Акции</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Каталоги</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Прайс-лист</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Сертификаты</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Справочная информация</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Контакты</a></li>
             </ul>
             <div class="row">
@@ -250,6 +246,7 @@ Email: info@atmk.ru</p></div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.webticker.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.event.move.js"></script>
     <script src="js/responsive-slider.js"></script>
@@ -261,6 +258,26 @@ Email: info@atmk.ru</p></div>
         slidesToShow: 3,
         slidesToScroll: 1
       });
+    </script>
+    <script>
+      $('.slider-items').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    </script>
+    <script>
+    $(".webTicker").webTicker({
+      speed: 600, //pixels per second
+      direction: "left", //if to move left or right
+      moving: true, //weather to start the ticker in a moving or static position
+      startEmpty: true, //weather to start with an empty or pre-filled ticker
+      duplicate: false, //if there is less items then visible on the ticker you can duplicate the items to make it continuous
+      rssurl: false, //only set if you want to get data from rss
+      rssfrequency: 0, //the frequency of updates in minutes. 0 means do not refresh
+      updatetype: "reset" //how the update would occur options are "reset" or "swap"
+    });
     </script>
   </body>
 </html>
