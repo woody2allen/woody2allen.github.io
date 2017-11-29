@@ -1,0 +1,420 @@
+@mixin anim($time){-webkit-transition: all $time ease;-moz-transition: all $time ease;-ms-transition: all $time ease;-o-transition: all $time ease;transition: all $time ease;}
+@mixin rotate($deg){-moz-transform: rotate($deg);-ms-transform: rotate($deg);-webkit-transform: rotate($deg);-o-transform: rotate($deg);transform: rotate($deg);}
+@mixin scale($num){-moz-transform: scale($num);-ms-transform: scale($num);-webkit-transform: scale($num);-o-transform: scale($num);transform: scale($num);}
+@mixin skew($num){-webkit-transform: skewX($num);-moz-transform: skewX($num);-ms-transform: skewX($num);-o-transform: skewX($num);transform: skewX($num);}
+@mixin cnt($h){display: flex;flex-direction: column;height: $h;text-align: center;align-items: stretch;justify-content: center;}
+//====================================================================================================
+/*
+font-family: 'Open Sans';
+font-family: 'Raleway';
+@extend .fr;
+@include anim(0.3s);
+*/
+//====================================================================================================
+.repair-header {margin: 0px auto 50px auto;max-width: 950px;color: #fff;}
+.repair-header__title {font-family: 'Raleway';font-size: 48px;font-weight: 700;margin-bottom: 5px;}
+.repair-header__subtitle {font-family: 'Raleway';font-size: 24px;font-weight: 300;margin-bottom: 25px;}
+.repair-header__text {font-size: 14px;font-weight: 300;line-height: 20px;padding-top: 15px;
+	p{margin-bottom: 15px;
+		&:last-child{margin-bottom:0px;}
+	}
+}
+
+.repair__text{color: #2c2c2c;font-size: 16px;font-weight: 300;line-height: 24px;margin-bottom: 50px;}
+.repair__text-row{margin:50px -15px 0 -15px;}
+.repair__text-column{float: left;width: 50%;padding:0 15px;}
+
+
+@media (max-width:767px){
+	.repair-header__title {font-size: 33px;}
+	.repair-header__subtitle {font-size: 20px;}
+	.repair__text-column{float: none;width: 100%;
+		&:first-child{margin-bottom: 20px;}
+	}
+}
+//====================================================================================================
+.worktypes {padding: 0px 0px 15px 0px;}
+.worktypes__title {font-family: 'Raleway';font-weight: 900;font-size: 60px;color: #213047;display: inline-block;padding-bottom: 20px;position: relative;margin-bottom: 65px;
+	&:after{content:'';background-color: #213047;height:7px;width: 50%;position: absolute;bottom: 0;left: 0;}
+}
+.worktypes-row {width: 80%;margin: 0px auto;}
+.worktypes-column {float: left;width: 50%;
+	ul{
+		li{list-style: none;margin-bottom: 24px;
+			background: url('../img/icons/checked.png') left top no-repeat;
+			min-height: 25px;
+			line-height: 25px;
+			color: #213047;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 0px 0px 0px 45px;
+			&:last-child{margin-bottom:0px;}
+		}
+	}
+}
+.worktypes-buttons {padding-top: 65px;display: table;width: 100%;text-align: center;}
+.worktypes-buttons__item.btn {margin:0 20px 20px 20px;}
+
+@media (max-width:767px){
+	.worktypes__title {font-size: 40px;text-align: center;
+		&:after{left: 50%;margin-left: -25%;}
+	}
+	.worktypes-row {width: 100%;margin: 0px auto;}
+	.worktypes-column {width: 100%;
+		ul{
+			li{margin-bottom: 15px;}
+		}
+		&:first-child{margin-bottom: 15px;}
+	}
+	.worktypes-buttons{padding-top: 35px;}
+}
+//====================================================================================================
+.why {padding: 50px 0px 0px 0px;}
+.why__title {font-family: 'Raleway';font-weight: 900;font-size: 60px;color: #213047;display: inline-block;padding-bottom: 20px;position: relative;margin-bottom: 65px;
+	&:after{content:'';background-color: #213047;height:7px;width: 50%;position: absolute;bottom: 0;left: 0;}
+}
+.why-row {background: url('../img/icons/arrows-r.png') center 18px no-repeat;}
+.why-column {float: left;width: 50%;}
+.why-column__title {text-align: center;font-size: 36px;font-weight: 300;color: #213047;margin-bottom: 20px;
+	strong{font-size: 48px;font-weight: 700;}
+}
+.why-body {position: relative;}
+.why-body_l {padding-right: 30px;
+	&:before{content:'';width: 600%;height: 100%;position: absolute;top: 0;right: 0;background-color: #ffd740;}
+}
+.why-body_r {padding-left: 30px;
+	&:before{content:'';width: 500%;height: 100%;position: absolute;top: 0;left: 0;background-color: #1862ab;}
+	.why-body-item__title {color: #fff;}
+	.why-body-item__text {color: #fff;border-left: 1px solid #1d497a;}
+}
+.why-body-items {position: relative;z-index: 2;}
+.why-body-item {border-bottom: 1px solid rgba(0,0,0,0.1);
+	&:last-child{border: none;}
+	.cell {vertical-align: middle;padding: 30px 0;
+		&:first-child{width: 28px;}
+	}
+}
+.why-body-item__icon {width: 28px;}
+.why-body-item__title {width: 230px;padding-left: 15px;text-transform: uppercase;color: #213047;font-size: 24px;font-weight: 700;padding-right: 20px;}
+.why-body-item__text {border-left: 1px solid #918444;padding-left: 20px;display: inline-block;color: #213047;font-size: 16px;line-height: 24px;}
+.why-buttons {padding: 50px 0 30px 0;display: table;width: 100%;text-align: center;}
+.why-buttons__item.btn{margin:0 5% 20px 5%;}
+
+@media (max-width:992px){
+	.why-row {background: none;}
+	.why-column {float: none;width: 100%;}
+	.why-body{padding: 0 !important;}
+	.why-body_l{margin-bottom: 15px;}
+	.why-body_l:before{right: -50%;}
+	.why-body_r:before{left: -50%;}
+}
+@media (max-width:767px){
+	.why__title {font-size: 40px;margin-bottom: 35px;text-align: center;
+		&:after{left: 50%;margin-left: -25%;}
+	}
+	.why-column__title {font-size: 25px;
+		strong{font-size: 35px;}
+	}
+	.why-body-item {padding: 15px 0;
+		.cell{display: block;text-align: center;padding: 10px 0;
+			&:first-child{width: 100%;}
+		}
+	}
+	.why-body-item__icon {width: 100%;}
+	.why-body-item__title {width: 100%;}
+	.why-body-item__text {border: none !important;padding: 0 !important;}
+}
+//====================================================================================================
+.repair-whywe{padding: 20px 0px 30px 0px;}
+.repair-whywe__title{color: #213047;font-family: 'Raleway';font-size: 36px;font-weight: 900;margin-bottom: 24px;}
+//====================================================================================================
+.aboutmodule {margin: 0px 0px 22px 0px;}
+.aboutmodule_top{margin: 50px 0px 0px 0px;}
+.aboutmodule__head{color: #213047;font-size: 30px;font-family: 'Raleway';font-weight: 900;margin-bottom: 25px;}
+.aboutmodule-table {
+	.cell {vertical-align: middle;
+		&:first-child{width: 100%;}
+		&:last-child{padding-left: 40px;}
+	}
+}
+.aboutmodule__video {
+	iframe{width: 100%;height: 463px;}
+}
+.aboutmodule__title {color: #213047;font-size: 60px;font-weight: 900;font-family: 'Raleway';}
+
+.aboutmodule__text{min-width: 325px;
+	p{margin-bottom: 15px;color: #5e5e5e;font-size: 14px;line-height: 18px;
+		&:last-child{margin-bottom:0px;}
+	}
+}
+@media (max-width:992px){
+	.aboutmodule__video {
+		iframe{width: 100%;height: 300px;}
+	}
+	.aboutmodule__title {font-size: 40px;}
+}
+@media (max-width:767px){
+	.aboutmodule-table {
+		.cell {display: block;
+			&:first-child{width: 100%;}
+			&:last-child{width: 100%;padding: 20px 0 0 0;text-align: center;}
+		}
+	}
+	.aboutmodule__text{text-align: left;min-width:0%;}
+}
+//====================================================================================================
+.repair-kredit-items{margin: 60px 0px 30px 0px;}
+//====================================================================================================
+.repair-kredit{padding: 30px 0px 0px 0px;}
+.repair-kredit__banner{text-align: center;margin-bottom: 40px;
+	img{max-width: 100%}
+}
+.repair-kredit-text{}
+.repair-kredit-text__title {color: #213047;font-family: 'Raleway';font-size: 60px;font-weight: 900;position: relative;padding-bottom: 20px;margin-bottom: 60px;
+	&:after{position: absolute;bottom: 0;left: 0;width: 40%;height: 7px;content: '';background-color: #213047;}
+}
+.repair-kredit-text__text {margin-bottom: 45px;
+	p{margin-bottom: 15px;color: #2c2c2c;font-size: 16px;font-weight: 300;line-height: 24px;
+		&:last-child{margin-bottom:0px;}
+	}
+}
+.repair-kredit-text-row {width: 90%;margin: 0px auto 60px auto;}
+.repair-kredit-text-column {float: left;width: 50%;padding-right: 30px;
+	ul li{list-style: none;margin-bottom: 24px;background: url('../img/icons/checked.png') 0 0 no-repeat;padding-left: 45px;font-size: 16px;font-weight: 700;color: #213047;line-height: 25px;
+		&:last-child{margin-bottom:0px;}
+	}
+}
+@media (max-width:992px){
+	.repair-kredit-text__title {font-size: 45px;}
+}
+@media (max-width:767px){
+	.repair-kredit-text__title {font-size: 35px;margin-bottom: 30px;}
+	.repair-kredit-text-row {width: 100%;}
+	.repair-kredit-text-column {float: none;width: 100%;
+		ul li{margin-bottom: 15px;}
+		&:first-child{margin-bottom: 15px;}
+	}
+}
+//====================================================================================================
+.repair-kredit-scheme {}
+.repair-kredit-scheme__title {color: #213047;font-family: 'Raleway';font-size: 48px;font-weight: 900;margin-bottom: 35px;}
+.repair-kredit-scheme-block{position: relative;padding-top: 100px;
+	&:before{content:'';background: url('../img/bg_repair-kredit-scheme.png') top no-repeat;width: 1045px;height: 380px;left: 153px;top: 0;position: absolute;}
+}
+.repair-kredit-scheme-block_h{
+	&:before{content:'';background: url('../img/bg_repair-kredit-scheme_half.png') top no-repeat;width: 865px;height: 76px;left: 153px;top: 0;position: absolute;}
+}
+.repair-kredit-scheme-table.table {text-align: center;position: relative;z-index: 2;}
+.repair-kredit-scheme-table_mob.table {display: none;}
+.repair-kredit-scheme-column{display: table-cell;width: 33.333%;padding-bottom: 70px;vertical-align: top;
+	&:first-child{text-align: left;}
+	&:last-child{text-align: right;}
+}
+.repair-kredit-scheme-item {display: inline-block;position: relative;max-width: 300px;height: 222px;box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.06);vertical-align: top;background-color: #fff;width: 100%;
+	.table{position: absolute;width: 100%;height: 100%;top: 0;left: 0;}
+	.cell {height: 100%;vertical-align: middle;}
+}
+
+.repair-kredit-scheme-item__num {position: absolute;left: 50%;top: -27px;margin-left: -27px;color: #f9d423;font-family: 'Raleway';font-size: 48px;font-weight: 700;border: 5px solid #f9d423;border-radius: 50%;text-align: center;line-height: 40px;width: 54px;height: 54px;background-color: #ffffff;}
+.repair-kredit-scheme-item__text {color: #213047;font-size: 16px;line-height: 24px;text-align: left;padding: 25px;
+	a{text-decoration: underline;color: #213047;
+		&:hover{text-decoration: none;}
+	}
+	strong{font-family: 'Raleway';display: block;}
+	span{text-transform: uppercase;font-weight: 700;}
+}
+.repair-kredit-scheme-table_hide {}
+.repair-kredit-scheme-table_mob {}
+
+
+@media (max-width:1170px){
+	.repair-kredit-scheme-block{
+		&:before{left: 40px;background-size:700px;top: 45px;}
+	}
+}
+@media (max-width:992px){
+	.repair-kredit-scheme__title {font-size: 40px;}
+	.repair-kredit-scheme-block{
+		&:before{display: none;}
+	}
+	.repair-kredit-scheme-column{display: inline-block;width: 50%;text-align: center !important;}
+	.repair-kredit-scheme-table_hide.table{display: none;}
+	.repair-kredit-scheme-table_mob.table {display: table;}
+}
+@media (max-width:650px){
+	.repair-kredit-scheme__title {font-size: 35px;}
+	.repair-kredit-scheme-column{display: inline-block;width: 100%;text-align: center !important;}
+}
+//====================================================================================================
+.repair-search {background-color: #ebebeb;padding:40px 0px;}
+.repair-search__title {font-family: 'Raleway';color: #213047;font-size: 48px;font-weight: 300;margin-bottom: 20px;
+	strong{font-weight: 900;}
+}
+.repair-search-form {}
+.repair-search-form-table.table {width: auto;
+	.cell{
+		&:last-child{padding-left: 25px;}
+	}
+}
+.repair-search-input {position: relative;width: 350px;
+	&.seria {
+		&:before{content:'';background: url('../img/icons/form/seria.png') center no-repeat;height: 50px;position: absolute;top: 0;left:0px;width:35px;}
+	}
+}
+.repair-aboutmodule{margin-bottom: 50px;}
+.repair-aboutmodule_mt{margin-top: 50px;}
+
+@media (max-width:600px){
+	.repair-search__title {text-align: center;font-size: 35px;}
+	.repair-search-form{text-align: center;}
+	.repair-search-form-table.table {width: 100%;
+		.cell{display: block;
+			&:last-child{padding:15px 0 0 0px;}
+		}
+	}
+	.repair-search-input {margin: 0px auto;max-width: 300px;width: 100%;}
+}
+//====================================================================================================
+.repair-seria {}
+.repair-seria-sector {margin-bottom: 60px;
+	.cooltable{border: 1px solid #d8d8d8;
+		th{color: #213047;font-size: 14px;font-weight: 400;text-align: left;padding: 20px;text-transform: uppercase;text-align: center;background-color: transparent;}
+		td{text-align: center;
+			&:first-child{text-align: left;}
+		}
+	}
+}
+.repair-seria-sliderrow {table-layout: fixed;
+	.cell {vertical-align: middle;
+		&:last-child{padding-left: 65px;}
+	}
+}
+.repair-seria-sliderrow_2{
+	.cell{vertical-align: top;}
+}
+.repair-seria-sliderrow__text {color: #83969f;font-style: italic;line-height: 25px;font-size: 14px;min-width: 400px;}
+.repair-seria-slider {
+	.slick-arrow{@include anim(0.3s);position: absolute;top: 50%;width: 83px;margin-top: -45px;height: 90px;background-size: 38px !important;z-index: 10;cursor: pointer;
+		&:hover{width: 89px;height: 108px;margin-top: -54px;background-size: 45px !important;}
+		&.slick-prev{border-radius:0 45px 45px 0;background: url('../img/icons/sl-l-2.png') 10px center no-repeat;left: 0;
+			&:hover{border-radius:0 54px 54px 0;background: url('../img/icons/sl-l-2_h.png') 10px center no-repeat;}
+		}
+		&.slick-next{border-radius:45px 0px 0px 45px;background:url('../img/icons/sl-r-2.png') 28px center no-repeat;right: 0;
+			&:hover{border-radius:54px 0px 0px 54px;background: url('../img/icons/sl-r-2_h.png') 28px center no-repeat;}
+		}
+	}
+}
+.repair-seria-slider_dark{
+	.slick-arrow{@include anim(0.3s);position: absolute;top: 50%;width: 83px;margin-top: -45px;height: 90px;background-size: 38px !important;z-index: 10;cursor: pointer;
+		&:hover{width: 89px;height: 108px;margin-top: -54px;background-size: 45px !important;}
+		&.slick-prev{border-radius:0 45px 45px 0;background: url('../img/icons/sl-l.png') 10px center no-repeat;left: 0;
+			&:hover{border-radius:0 54px 54px 0;background: url('../img/icons/sl-l_h.png') 10px center no-repeat;}
+		}
+		&.slick-next{border-radius:45px 0px 0px 45px;background:url('../img/icons/sl-r.png') 28px center no-repeat;right: 0;
+			&:hover{border-radius:54px 0px 0px 54px;background: url('../img/icons/sl-r_h.png') 28px center no-repeat;}
+		}
+	}
+}
+.repair-seria-slide {text-align: center;
+	img{max-width: 100%;}
+}
+.repair-seria__label{text-transform: uppercase;font-size: 14px;color: #5e5e5e;font-weight: 700;margin-bottom: 20px;}
+
+@media (max-width:767px){
+	.repair-seria-sector {
+		.cooltable{overflow: auto;
+			table{min-width: 500px;}
+		}
+	}
+	.repair-seria-sliderrow {
+		.cell {display: block;
+			&:first-child{padding: 0px 0px 30px 0px;}
+			&:last-child{padding: 0;}
+		}
+	}
+	.repair-seria-sliderrow__text {padding: 0;min-width: 0;}
+}
+
+.repair-seria-sliderrow__btn.btn{margin-top: 15px;}
+.repair-seria-row {margin:0 -20px;}
+.repair-seria-column {float: left;width:33.333%;padding:0 20px;}
+.repair-seria-text {color: #5e5e5e;margin-bottom: 15px;
+	strong{text-transform: uppercase;display: block;margin-bottom: 5px;}
+	&:last-child{margin-bottom:0px;}
+}
+
+@media (max-width:767px){
+	.repair-seria-column {width: 100%;float: none;margin-bottom: 15px;
+		&:last-child{margin-bottom:0px;}
+	}
+}
+//====================================================================================================
+.repair-flatprice{}
+.repair-flatprice-sector{margin-bottom: 50px;}
+.repair-flatprice__title{font-family: 'Raleway';font-weight: 900;color: #213047;font-size: 30px;margin-bottom: 55px;}
+.repair-flatprice-items_2{
+	.repair-flatprice-item__title{text-transform: none;}
+}
+.repair-flatprice-item{margin-bottom: 20px;}
+.repair-flatprice-item__title{color: #1862ab;font-size: 24px;font-weight: 600;text-transform: uppercase;padding-left: 20px;position: relative;cursor: pointer;
+	&:before{@include anim(0.3s);@include rotate(90deg);content:'';background: url('../img/icons/sl-r.png') 0 0 no-repeat;height: 15px;width: 8px;position: absolute;left: 0;top: 4px;background-size: 100%;}
+	&.active{color: #42b8dd;
+		&:before{background: url('../img/icons/sl-r-2_h.png') 0 0 no-repeat;background-size: 100%;@include rotate(-90deg);}
+	}
+}
+.repair-flatprice-item-block{margin-top: 20px;max-height: 730px;padding-right: 15px;display: none;
+	.cooltable{border: 1px solid #d8d8d8;
+		th{color: #213047;font-size: 14px;font-weight: 400;text-align: left;padding: 20px;text-transform: uppercase;text-align: center;background-color: transparent;
+			&:first-child{text-align: left;}
+		}
+		td{text-align: center;
+			&:first-child{text-align: left;}
+		}
+		td.repair-flatprice-item__label{color: #ffffff;font-size: 14px;font-weight: 700;text-align: left;background-color: #213047;padding: 20px;text-transform: uppercase;}
+		td.repair-flatprice-item__btn{text-align: center;}
+	}
+}
+
+.repair-flatprice-item-header {margin-bottom: 20px;
+	.cell {width: 50%;}
+}
+.repair-flatprice-item-header__price{color: #5e5e5e;font-size: 14px;font-weight: 700;line-height: 16px;text-transform: uppercase;}
+.repair-flatprice-item-header__photos {color: #1862ab;font-weight: 600;font-size: 14px;text-decoration: underline;
+	&:hover{text-decoration: none;}
+}
+.repair-flatprice__all{color: #1862ab;font-weight: 600;font-size: 14px;text-decoration: underline;display: inline-block;margin-top: 10px;
+	&:hover{text-decoration: none;}
+}
+@media (max-width:767px){
+	.repair-flatprice__title{font-size: 28px;margin-bottom: 20px;}
+	.repair-flatprice-item-block{max-height: none;
+		.cooltable{overflow: auto;
+			table{min-width:800px;}
+		}
+	}
+	.repair-flatprice-item-header{
+		.cell{display: block;width: 100%;
+			&:first-child{padding-bottom: 10px;}
+		}
+	}
+}
+//====================================================================================================
+.repair-smeta{padding:30px 0px 150px 0px;
+	.repair-flatprice__title{font-weight: 300;font-size: 48px;margin-bottom: 40px;}
+	.repair-flatprice-items{padding: 0px 0px 0px 30px;}
+}
+@media (max-width:767px){
+	.repair-smeta{padding:30px 0px 30px 0px;
+		.repair-flatprice__title{font-weight: 300;font-size:35px;margin-bottom: 20px;}
+		.repair-flatprice-items{padding: 0px 0px 0px 0px;}
+	}
+}
+//====================================================================================================
+/*
+font-family: 'Open Sans';
+font-family: 'Raleway';
+@extend .fr;
+@include anim(0.3s);
+*/
+//====================================================================================================
+

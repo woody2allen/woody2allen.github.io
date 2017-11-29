@@ -1,0 +1,100 @@
+@mixin anim($time){-webkit-transition: all $time ease;-moz-transition: all $time ease;-ms-transition: all $time ease;-o-transition: all $time ease;transition: all $time ease;}
+@mixin rotate($deg){-moz-transform: rotate($deg);-ms-transform: rotate($deg);-webkit-transform: rotate($deg);-o-transform: rotate($deg);transform: rotate($deg);}
+@mixin scale($num){-moz-transform: scale($num);-ms-transform: scale($num);-webkit-transform: scale($num);-o-transform: scale($num);transform: scale($num);}
+@mixin skew($num){-webkit-transform: skewX($num);-moz-transform: skewX($num);-ms-transform: skewX($num);-o-transform: skewX($num);transform: skewX($num);}
+@mixin cnt($h){display: flex;flex-direction: column;height: $h;text-align: center;align-items: stretch;justify-content: center;}
+//====================================================================================================
+/*
+font-family: 'Open Sans';
+font-family: 'Raleway';
+@extend .fr;
+@include anim(0.3s);
+*/
+//====================================================================================================
+footer{background-color: #213047;padding: 55px 0px 55px 0px;}
+.footer-table {
+	.cell {vertical-align: middle;}
+}
+.footer_logo {}
+.footer_menu {width: 100%;padding:0 50px 0 50px;}
+.footer_contacts {padding-right: 30px;}
+.footer_buttons {}
+.footer__logo {display: inline-block;}
+.footer-logoblock{display: inline-block;}
+.footer-social {padding-top: 16px;display: table;width: 145px;margin: 0px auto;}
+.footer-social__link {height: 23px;display: table-cell;}
+.footer-social__link_1 {background: url('../img/icons/social/01.png') center no-repeat;width: 13px;
+	&:hover{background: url('../img/icons/social/01_h.png') center no-repeat;}
+}
+.footer-social__link_2 {background: url('../img/icons/social/02.png') center no-repeat;width: 22px;
+	&:hover{background: url('../img/icons/social/02_h.png') center no-repeat;}
+}
+.footer-social__link_3 {background: url('../img/icons/social/03.png') center no-repeat;width: 26px;
+	&:hover{background: url('../img/icons/social/03_h.png') center no-repeat;}
+}
+.footer-social__link_4 {background: url('../img/icons/social/04.png') center no-repeat;width: 22px;
+	&:hover{background: url('../img/icons/social/04_h.png') center no-repeat;}
+}
+.footer-menu {float: left;margin-right: 65px;
+	&:last-child{margin: 0;}
+	li{list-style: none;margin-bottom: 10px;
+		&:last-child{margin-bottom:0px;}
+	}
+}
+.footer-menu__link {display: block;font-size: 15px;color: #2164a6;
+	&:hover{color: #42b8dd;text-decoration: underline;}
+}
+.footer-contacts {text-align: right;}
+.footer-contacts__phone {font-size: 26px;font-weight: 300;white-space: nowrap;color: #fff;margin-bottom: 5px;
+	span{font-weight: 700;font-size: 32px;}
+}
+.footer-contacts__mail {font-size: 14px;font-weight: 700;color: #ffd740;}
+.footer-contacts-schedule {padding-top: 20px;color: #1862ab;font-size: 12px;text-transform: uppercase;font-weight: 300;
+	p{margin-bottom: 5px;}
+	span{font-weight: 700;color: #fff;font-size: 16px;}
+}
+.footer-contacts__callback {text-transform: none;text-decoration: underline;font-size: 12px;font-weight: 300;color: #42b8dd;
+	&:hover{text-decoration: none;}
+}
+.footer__btn.btn {white-space: nowrap;width: 235px;padding: 0;
+	&:first-child{margin-bottom: 10px;}
+}
+@media (max-width:1170px){
+	.footer-table {
+		.cell {vertical-align: top;}
+	}
+	.footer-menu {float: none;margin: 0;
+		&:first-child{margin-bottom: 10px;}
+	}
+}
+@media (max-width:992px){
+	.footer-table {
+		.cell {display: block;display: inline-block;vertical-align: top;width: 50%;}
+	}
+	.footer_logo {}
+	.footer_menu {padding:0 0px 0 0px;}
+	.footer_contacts {padding: 40px 0 0 0;}
+	.footer_buttons {text-align: right;padding: 40px 0 0 0;}
+	.footer-contacts {text-align: left;}
+
+	.footer-menu {float: left;width: 50%;}
+}
+@media (max-width:600px){
+	footer{background-color: #213047;padding: 30px 0px 30px 0px;}
+	.footer-table {
+		.cell {display: block;display: inline-block;vertical-align: top;width: 100%;}
+	}
+	.footer_logo {text-align: center;margin-bottom: 30px;}
+	.footer-contacts {text-align: center;}
+	.footer_buttons {text-align: center;}
+}
+
+//====================================================================================================
+/*
+font-family: 'Open Sans';
+font-family: 'Raleway';
+@extend .fr;
+@include anim(0.3s);
+*/
+//====================================================================================================
+
