@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Uchi</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="number__box">
+				<span class="first__number">7</span> +
+				<span class="second__number">4</span> =
+				<span class="result__number">?</span>
+				<span class="input__span"><input type="text" class="input__variant--result result__variant"></span>
+			</div>
+			<div class="progress__box">
+			<div class="progress__1">
+				<input type="text" class="input__variant first__variant">
+				<span class="first__number--input"></span>
+				<canvas id="canvas1" width="274" height="274"></canvas>
+			</div>
+			<div class="progress__2">
+				<input type="text" class="input__variant second__variant">
+				<span class="second__number--input"></span>
+				<canvas id="canvas2" width="160" height="160"></canvas>
+			</div>
+			</div>
+			<div class="line__box">	
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+html, body {
+   min-width: 1024px;
+   padding: 0px;
+   margin: 0px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   font-size: 30px;
+   color: #333333; }
+
+.container {
+   position: relative;
+   width: 1024px;
+   height: 100%;
+   margin: 0 auto; }
+
+.container:before, .container:after {
+   display: table;
+   content: "";
+   line-height: 0; }
+
+.container:after {
+   clear: both; }
+
+.number__box {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.first__number {
+	width: 26px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.second__number {
+	width: 26px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.result__number {
+	width: 45px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.line__box {
+	width: 875px;
+	height: 83px;
+	background: url(../img/sprite.png) no-repeat 50% 50%;
+	margin: 0 auto;
+}
+.progress__box {
+	width: 875px;
+	margin: 0 auto;
+}
+.progress__1 {
+  	position: relative;
+    width: 274px;
+    height: 110px;
+    margin-left: 35px;
+    display: inline-block;
+}
+.progress__2 {
+  	position: relative;
+    width: 160px;
+    height: 50px;
+    display: inline-block;
+    margin-left: -9px;
+}
+#canvas1 {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+#canvas2 {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+.input__variant {
+	width: 20px;
+	border-radius: 3px;
+	border: 1px solid #227cf7;
+	top: -30px;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    display: none;
+}
+.input__variant--result {
+	width: 45px;
+    border-radius: 3px;
+    border: 1px solid #227cf7;
+    text-align: center;
+    font-size: 30px;
+}
+.input__span {
+	display: none;
+}
+.first__number--input {
+	width: 20px;
+	top: -30px;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    display: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+.second__number--input {
+	width: 20px;
+	top: -30px;
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    display: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+.visible {
+	display: block;
+}
+.visible-span {
+	display: inline-block;
+}
+.hidden {
+	display: none;
+}
+.wrong {
+	color: red;
+}
+.wrong__number {
+	background: #f7b822;
+}
